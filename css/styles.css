@@ -34,7 +34,8 @@ body {
 }
 
 h2 {
-  padding: 25px;
+  padding-top: 100px;
+  padding-bottom: 25px;
 }
 
 .text-vertical-center {
@@ -48,9 +49,22 @@ h2 {
  */
 .navbar.navbar-toggleable-sm.navbar-inverse {
   position: absolute;
-  z-index: 100;
+  width: 100%;
   background: transparent;
+  z-index: 1000;
 }
+
+/* Hide border on menu bars */
+.navbar-inverse .navbar-toggler {
+  border-color: transparent;
+}
+
+/* Move mobile menu bars right side of screen */
+button.navbar-toggler {
+  position: absolute;
+  right: 0;
+}
+
 
 /*
  * Header
@@ -75,5 +89,29 @@ header p {
 }
 
 /*
+ * About
+ */
+.about {
+  padding-bottom: 50px;
+}
+
+/*
+ * Menu
+ */
+.menu {
+  background-color: #FFC107;
+  padding-bottom: 50px;
+}
+
+
+
+/*
  * Footer
  */
+footer a {
+  color: #489fdf;
+}
+
+footer a:hover {
+  color: orange;
+}
